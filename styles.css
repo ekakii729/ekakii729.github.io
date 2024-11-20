@@ -1,0 +1,179 @@
+/* common style for the font throughout the page */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-weight: 1;
+}
+
+/* navigation bar */
+.navbar {
+    background-color: white;
+    margin-bottom: 1vh;
+}
+
+/* contains the nav buttons */
+.navbar-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* the buttons in the nav bar */
+.nav-button {
+    border: none;
+    background: none;
+    color: black;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    margin: 20px;
+    transition: 0.1s;
+}
+
+/* changes the color of the nav button text when hovered on */
+.nav-button:hover {
+    color: rgb(132, 132, 132)
+}
+
+
+/* the image in the header */
+.header-image {
+    margin: 0;
+    background-image: url("images/header-image.jpg");
+    filter: blur(9px);
+    height: 75vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* darkens the image in the header */
+.header-image::after {
+    content: ''; 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* the text in the header image */
+.header-text {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* the title for each section ex. 'our core values' */
+.section-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 0;
+}
+
+/* the text for the intro 'at abc solutions'.. */
+.intro-text {
+    text-align: center;
+    margin-bottom: 5vh;
+    margin-left: 20vh;
+    margin-right: 20vh;
+}
+
+/* removes bullet from from the list on the page */
+.list {
+    list-style-type: none;
+}
+
+/* header for the item on the list ex. creativity */
+.list-header {
+    font-size: 50px;
+    margin-bottom: 5vh;
+    margin-top: 10vh;
+    margin-left: 1vh;
+}
+
+/* container holding the item name and image */
+.list-item-content {
+    display: flex;
+    margin-top: 5vh;
+}
+
+/* image for each list item */
+.list-item-img {
+    height: 50vh;
+    width: 50vh;
+    margin-right: 10vh;
+    border-radius: 10%;
+}
+
+/* some items should have the header on the right side */
+#list-item-reverse {
+    text-align: right;
+    margin-right: 10vh;
+}
+
+/* the description for each item */
+.list-item-description {
+    margin-left: 10vh;
+    margin-right: 10vh;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Genevas, Verdana, sans-serif;
+    font-size: 30px;
+}
+
+/* managing the size of the office image */
+#office-img {
+    margin: 5vh;
+    width: 175vh;
+    border-radius: 5px;
+}
+
+/* the table which contains service info */
+.services-table {
+    font-size: 30px;
+    border-spacing: 10vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.table-header {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 1;
+}
+
+/* the button at the bottom of the page, redirects to a different page */
+.footer-button {
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+    color: white;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif
+}
+
+/* when hovering over the footer button, it turns slightly lighter */
+.footer-button:hover {
+    background-color: rgb(55, 42, 42);
+}
+
+/* used to align the page info and the logo at the bottom of the page */
+.logo-and-page-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* the logo in the footer */
+.footer-logo {
+    height: 5vh;
+    width: 5vh;
+}
+
+/* page info section at bottom, includes author, and date of creation */
+.page-info {
+    font-size: 15px;
+    text-align: right;
+}
