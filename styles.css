@@ -120,6 +120,7 @@ body {
 /* the description for each item */
 .list-item-description {
     margin-left: 10vh;
+    margin-top: 15vh;
     margin-right: 10vh;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Genevas, Verdana, sans-serif;
@@ -140,9 +141,15 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
+/* the column headers for the table */
 .table-header {
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 1;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* a cell in the table */
+td {
+    text-align: center;
 }
 
 /* the button at the bottom of the page, redirects to a different page */
